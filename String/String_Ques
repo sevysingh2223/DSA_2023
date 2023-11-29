@@ -1,0 +1,21 @@
+Intro to string
+Inbuilt methods in string
+string input ways
+implement all methods of string
+    touppercase
+    tolowercase
+    .trim
+reverse a string
+palindrome
+count vowels in a string
+anagram
+first index of a char
+non repeating char in a string
+capitalize first letter of every word in a string
+no of words ina string
+determine string has all unique char
+length of last word
+length of kth word
+reverse the order of each word
+find digits in a string
+running length encoding
