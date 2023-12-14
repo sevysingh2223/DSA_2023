@@ -74,7 +74,7 @@ public class CRUDFile {
         String content = "Print 1 to N";
         updateFile(filePath, content);
 
-        readFile(filePath);
-        deleteFile(filePath);
+        // readFile(filePath);
+        // deleteFile(filePath);
     }
 }
