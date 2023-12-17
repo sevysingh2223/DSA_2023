@@ -7,7 +7,7 @@ public class GameFrame extends JFrame {
     public GameFrame() {
         setTitle("2D_GAME");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 600); // Width and height of the window
+        setSize(1200, 600); // Width and height of the window
         setResizable(false);
         setLocationRelativeTo(null);
         add(new Board());
