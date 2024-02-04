@@ -1,1 +1,35 @@
-Hello UserHello UserHello User
+package dsa_question.recursion;
+
+public class binarysearch {
+    public static void main(string[] args) {
+        
+        int arr[] ={3,5,7,9,12,16,25,39,48,85};
+        int n = arr.length;
+        int target = 85;
+        int low = 0;
+        int high = n-1;
+        int flag = 0;
+
+        while(low<=high){
+            int mid = (low + high) /2;
+            if(arr[mid] == target){
+                flag = mid;
+                break;
+            }
+            if(arr[mid] < target){
+                low = mid+1;
+            }
+            if(arr[mid] > target){
+                high = mid-1;
+            }
+        }
+        filehandling\intro.txt
+
+        if(flag!=0){
+            system.out.println("element found at index : " + flag);
+        }
+        else{
+            system.out.println("element not found");
+        }
+    }
+}

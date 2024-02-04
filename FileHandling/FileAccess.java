@@ -1,8 +1,10 @@
+package FileHandling;
+
 import java.io.File;
 
 public class FileAccess {
     public static void main(String[] args) {
-        File my_directory = new File("grandParent\\parentDir\\childDir1");
+        File my_directory = new File("E:\\DSA_23\\Game");
 
         if (my_directory.isDirectory()) {
             File[] files_array = my_directory.listFiles();
@@ -22,3 +24,14 @@ public class FileAccess {
         }
     }
 }
+
+
+// CRUD
+// Read (FIS)
+// Write(FOS)
+// Count Char
+// Count line
+// To Uppercase
+// Make Dir and Dirs
+// File Access : print no of files in a folder 
+// Copy File Data

@@ -23,6 +23,7 @@ public class BinarySearch {
                 high = mid-1;
             }
         }
+        FileHandling\intro.txt
 
         if(flag!=0){
             System.out.println("Element Found at index : " + flag);

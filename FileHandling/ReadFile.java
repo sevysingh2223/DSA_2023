@@ -1,9 +1,11 @@
+package FileHandling;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
 public class ReadFile {
     public static void main(String[] args) {
-        try (FileInputStream fis = new FileInputStream("intro.txt")) {
+        try (FileInputStream fis = new FileInputStream("E:\\DSA_23\\FileHandling\\intro.txt")) {
             int data;
             while ((data = fis.read()) != -1) {
                 System.out.print((char) data);

@@ -29,52 +29,50 @@ public class CRUDFile {
 
     }
 
-    static void deleteFile(String path){
+    static void deleteFile(String path) {
         File file = new File(path);
-        if(file.delete()){
+        if (file.delete()) {
             System.out.println("File deleted successfully");
-        }
-        else{
+        } else {
             System.out.println("Some error occured");
         }
     }
 
-    static void readFile(String filePath){
-        try(BufferedReader reader = new BufferedReader(new FileReader(filePath))){
+    static void readFile(String filePath) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             System.out.println("FILE CONTENT IS");
-            while((line = reader.readLine()) != null){
-                System.out.println(line);
+            while ((reader.readLine()) != null) {
+                // line = reader.readLine();
+                System.out.println(reader.readLine());
             }
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             System.out.println("Some error occured");
             e.printStackTrace();
         }
     }
 
-    static void updateFile(String filePath , String content){
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter(filePath , true))){
+    static void updateFile(String filePath, String content) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
             writer.newLine();
             writer.write(content);
             System.out.println("File Updated Successfully");
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             System.out.println("Some error occured");
             e.printStackTrace();
         }
     }
 
     public static void main(String[] args) {
-        String filePath = "E:\\DSA_23\\OOPS\\RANDOM";
+        String filePath = "E:\\DSA_23\\OOPS\\NEW.txt";
 
         // Create
-        createFile(filePath);
-        
-        String content = "Print 1 to N";
-        updateFile(filePath, content);
+        // createFile(filePath);
 
-        // readFile(filePath);
+        String content = "Print 1 to N";
+        // updateFile(filePath, content);
+
+        readFile(filePath);
         // deleteFile(filePath);
     }
 }
